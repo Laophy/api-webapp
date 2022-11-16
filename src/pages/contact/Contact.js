@@ -1,10 +1,11 @@
 import React from 'react';
 import PageLayout from '../../layout/PageLayout';
+import axios from 'axios'
 
 const Contact = () => {
   return (
-    <PageLayout title="Contact">
-      <h3>Contact page</h3>
+    <PageLayout title="Settings">
+      <h3>Settings</h3>
     </PageLayout>
   );
 };

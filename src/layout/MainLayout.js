@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import { HomeOutlined, QuestionCircleOutlined, ContactsOutlined } from '@ant-design/icons';
+import { RadarChartOutlined, SlidersOutlined, SettingOutlined } from '@ant-design/icons';
 import './MainLayout.less';
 
 const { Footer, Sider } = Layout;
@@ -41,20 +41,20 @@ export default class MainLayout extends React.Component {
           >
             <Menu.Item key="0">
               <Link to="/">
-                <HomeOutlined />
-                <span className="menu-item-link">Home</span>
+                <RadarChartOutlined />
+                <span className="menu-item-link">Dashboard</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="1">
               <Link to="/about">
-                <QuestionCircleOutlined />
-                <span className="menu-item-link">About</span>
+                <SlidersOutlined />
+                <span className="menu-item-link">API-Test</span>
               </Link>
             </Menu.Item>
             <Menu.Item key="2">
               <Link to="/contact">
-                <ContactsOutlined />
-                <span className="menu-item-link">Contact</span>
+                <SettingOutlined />
+                <span className="menu-item-link">Settings</span>
               </Link>
             </Menu.Item>
           </Menu>
